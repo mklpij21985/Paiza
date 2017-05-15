@@ -1,7 +1,7 @@
 <?php
     // 自分の得意な言語で
     // Let's チャレンジ！！
-    $input_lines = "aaaFalseaaa";
+    $input_lines = fgets(STDIN);
     $len = strlen($input_lines);
    if($len >= 1 && $len <= 100)
    {
