@@ -14,18 +14,18 @@
         $z++;
         $al++;
     }
-    echo "<br>";
+    echo "\n";
     while($a[1] > $x)
     {
         echo "{$al}";
-        $z++;
+        $x++;
         $al++;
     }
-    echo "<br>";
+    echo "\n";
     while($a[2] > $c)
     {
         echo "{$al}";
-        $z++;
+        $c++;
         $al++;
     }
 
