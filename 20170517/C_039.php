@@ -10,14 +10,12 @@
 
     for($i = 0; $i < count($siki); $i++)
     {
-        if($siki[$i] != "+")
-        {
+
             $a = mb_substr_count($siki[$i], "/");
             $a = $a * 1;
             $b = mb_substr_count($siki[$i], "<");
             $b = $b * 10;
             $sam = $sam + $a + $b;
-        }
 
     }
         echo "{$sam}";
