@@ -5,19 +5,19 @@
     $nitiji = explode(" ", $input_lines);
     $hiniti = explode("/", $nitiji[0]);
     $jikan = explode(":", $nitiji[1]);
+    $hinititasu = 0;
 
 
 
-
-    if($jikan[0] > 23)
+    while($jikan[0] > 23)
     {
         $jikan[0] = $jikan[0] - 24;
+        $hinititasu++;
     }
 
-        if($hiniti[1])
-    {
-        $hiniti[1] = $hiniti[1] + 1;
-    }
+
+        $hiniti[1] = $hiniti[1] + $hinititasu;
+
 
     if($jikan[0] > 9)
     {
