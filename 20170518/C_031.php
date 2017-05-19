@@ -45,8 +45,17 @@
    {
 
        $jisa_jikan = $ho_min[0] + $jisa[$l];
+       if($jisa_jikan > 23)
+       {
+           $jisa_jikan = $jisa_jikan - 24;
+       }
+       elseif($jisa_jikan < 0)
+       {
+           $jisa_jikan = $jisa_jikan + 24;
+       }
        echo str_pad("{$jisa_jikan}", 2, 0, STR_PAD_LEFT);
        echo ":{$ho_min[1]}\n";
+
        $l++;
    }
 ?>
